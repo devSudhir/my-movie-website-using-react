@@ -27,11 +27,12 @@ export const MovieDetails = () => {
             alt=""
           />
           <h2>{data.title}</h2>
-          <h3>{data.original_language}</h3>
-          <h4>{data.release_date}</h4>
+          <h3>Language:{data.original_language}</h3>
+          <h4>release_date:{data.release_date}</h4>
           <h5>
-            {data.vote_average}/10 ({data.vote_count})
+            Rating:{data.vote_average}/10 ({data.vote_count})
           </h5>
+          <p>{data.overview}</p>
         </div>
       )}
     </>

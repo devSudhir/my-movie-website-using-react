@@ -23,10 +23,10 @@ export const Movies = () => {
               alt=""
             />
             <h2>{ele.title}</h2>
-            <h3>{ele.original_language}</h3>
-            <h4>{ele.release_date}</h4>
+            <h3>Language: {ele.original_language}</h3>
+            <h4>Release date:{ele.release_date}</h4>
             <h5>
-              {ele.vote_average}/10 ({ele.vote_count})
+              Rating: {ele.vote_average}/10 ({ele.vote_count})
             </h5>
             <Link to={`/movie/${ele.id}`}>More Details</Link>
           </div>
